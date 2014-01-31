@@ -1,8 +1,16 @@
 import random
+import os
+import time
 
-destination = "methinks it is like a weasel methinks it is like a weasel"
+destination = ("Methinks it is like a weasel\n"
+               "Shall I compare thee\n"
+               "Methinks it is like a weasel\n"
+               "Shall I compare thee\n"
+               "Are you so lovely\n"
+               "Are you so lovely\n"
+               )
 
-alphabet = "abcdefghijklmnopqrstuvwxyz "
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz \n"
 
 def generate_letter():
     return alphabet[random.randint(0,len(alphabet)-1)]
@@ -47,7 +55,9 @@ def score_attempt(attempt, target):
 def mutate(instring, position_list):
     instring_list = list(instring)
     char_to_mutate = position_list[random.randint(0,len(position_list) - 1)]
-    instring_list[char_to_mutate] = generate_letter()
+    gend_letter = generate_letter()
+    instring_list[char_to_mutate] = gend_letter
+
     return "".join(instring_list)
 
 i = 0
@@ -58,8 +68,10 @@ best_score = 0
 while True:
     error_index = find_index_of_errors(generation, destination)
     mutation = mutate(generation, error_index)
-    print(generation)
+    print(mutation)
     if score_attempt(mutation, destination) > best_score:
         generation = mutation
         best_score = score_attempt(generation, destination)
+    time.sleep(0.05)
+    os.system('clear')
 
