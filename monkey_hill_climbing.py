@@ -72,6 +72,4 @@ while True:
     if score_attempt(mutation, destination) > best_score:
         generation = mutation
         best_score = score_attempt(generation, destination)
-    time.sleep(0.05)
-    os.system('clear')
 
