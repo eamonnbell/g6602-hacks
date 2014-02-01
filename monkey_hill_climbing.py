@@ -2,15 +2,9 @@ import random
 import os
 import time
 
-destination = ("Methinks it is like a weasel\n"
-               "Shall I compare thee\n"
-               "Methinks it is like a weasel\n"
-               "Shall I compare thee\n"
-               "Are you so lovely\n"
-               "Are you so lovely\n"
-               )
+destination = "We are such stuff as dreams are made on"
 
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz \n"
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
 
 def generate_letter():
     return alphabet[random.randint(0,len(alphabet)-1)]
