@@ -9,3 +9,9 @@ Naive infinite monkey implementation. Maximizes on cardinality of common substri
 ## monkey_hill_climbing.py
 
 Infinite monkey with incremental improvement, mutates one non-correct character per iteration. Maximizes on correct chars in correct position.
+
+(Python 3)
+
+## aftersol.py
+
+After Sol Lewitt. Uses TkInter which is a standard module to draw on a canvas. Would like to expand this to include user input "ratifying" mutations. 
