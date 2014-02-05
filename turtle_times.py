@@ -22,3 +22,5 @@ for pair in datalist:
   turn_angle = random.choice([90,270])  
   frank.left(turn_angle)
 
+turtlescreen = frank.getscreen()
+turtlescreen.getcanvas().postscript(file="out.eps")
