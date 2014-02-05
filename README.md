@@ -2,6 +2,14 @@ g6602-hacks
 ===========
 Central repo for work done on G6602 Spring 2014 at Columbia
 
+## turtle_times.py
+
+Usage:
+
+python turtle_times.py somefile
+
+Where somefile is a textfile containing the body text of some news story. Watch as Frank turtle "interprets" the news. See code for implementation comments.
+
 ## monkey.py
 
 Naive infinite monkey implementation. Maximizes on cardinality of common substrings - don't know how good this is, it certainly won't achieve the target.
