@@ -14,6 +14,12 @@ If somefile is not given, the program reads from stdin (Ctrl-D to end input).
 
 This script outputs a record of the turtle's otherwise transient scribbles to a file out.eps in the same directory.
 
+I've included fox and nyt in this directory as examples of news stories so you can use this script right away.
+
+Dependencies:
+
+None/Python 2.5+?
+
 ## monkey.py
 
 Naive infinite monkey implementation. Maximizes on cardinality of common substrings - don't know how good this is, it certainly won't achieve the target.
