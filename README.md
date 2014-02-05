@@ -6,9 +6,13 @@ Central repo for work done on G6602 Spring 2014 at Columbia
 
 Usage:
 
-python turtle_times.py somefile
+python turtle_times.py [somefile]
 
 Where somefile is a textfile containing the body text of some news story. Watch as Frank turtle "interprets" the news. See code for implementation comments.
+
+If somefile is not given, the program reads from stdin (Ctrl-D to end input).
+
+This script outputs a record of the turtle's otherwise transient scribbles to a file out.eps in the same directory.
 
 ## monkey.py
 
